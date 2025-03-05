@@ -1,7 +1,7 @@
-import express from "express";
-import { createServer } from "http";
-import { Server } from "socket.io";
-import dotenv from "dotenv";
+const express = require("express");
+const { createServer } = require("http");
+const { Server } = require("socket.io");
+const dotenv = require("dotenv");
 
 dotenv.config();
 
