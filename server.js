@@ -15,6 +15,11 @@ const io = new Server(server, {
   },
 });
 
+// Express route to handle POST /ping
+app.post("/ping", (req, res) => {
+  res.send("pong");
+});
+
 // Handle WebSocket connections
 io.on("connection", (socket) => {
   console.log(`User connected: ${socket.id}`);
